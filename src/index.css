@@ -260,21 +260,27 @@ Stock Photos
   align-items: center;
 }
 
+.photo-info.check {
+  transform: translateY(0);
+}
+
 @media screen and (min-width: 676px) {
-  .photo-info {
-    transform: translateY(100%);
-  }
-
-  .photo:hover .photo-info {
-    transform: translateY(0);
-  }
-
   .photos-center {
     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
   }
 
   .search-form {
     max-width: var(--fixed-width);
+  }
+}
+
+@media (hover: hover) {
+  .photo-info {
+    transform: translateY(100%);
+  }
+
+  .photo:hover .photo-info {
+    transform: translateY(0);
   }
 }
 

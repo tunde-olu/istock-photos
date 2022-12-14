@@ -16,8 +16,9 @@ const Photo = ({
     saveAs(url, name.replace(/ /, "_"));
   };
 
+
   return (
-    <article className="photo">
+    <article className="photo" >
       <img src={regular} alt={alt_description} />
       <div className="photo-info">
         <div>
